@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <script src="https://cesiumjs.org/releases/1.54/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesiumjs.org/releases/1.54/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <script href="script.js" type="text/javascript"></script>
+
+</head>
+    
+<body>
+    
+    <div id="cesiumContainer">
+
+    </div>
+
+    <button id="printVoucher" onclick="print();">Print</button>
+
+    <script>
+        Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwYTAwMTYzZi1kOGFjLTQyMDQtYjI0Ny03MWQ5ZTM1OGE2NjYiLCJpZCI6Nzc4Niwic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTU1MDQ3NDQ4OX0.LRLrZO7tSId3sR7xYPOxkS1ODfaQuyQygD9mwWQ1TGQ';
+        var viewer = new Cesium.Viewer('cesiumContainer');
+    </script>
+
+</body>
+</html>
