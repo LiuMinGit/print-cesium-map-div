@@ -10,4 +10,3 @@ $(function()
     }
     $("#printVoucher").click(function(){ print_voucher(); });
 });
-
