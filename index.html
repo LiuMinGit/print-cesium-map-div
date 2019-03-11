@@ -19,7 +19,13 @@
 
     <script>
         Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwYTAwMTYzZi1kOGFjLTQyMDQtYjI0Ny03MWQ5ZTM1OGE2NjYiLCJpZCI6Nzc4Niwic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTU1MDQ3NDQ4OX0.LRLrZO7tSId3sR7xYPOxkS1ODfaQuyQygD9mwWQ1TGQ';
-        var viewer = new Cesium.Viewer('cesiumContainer');
+        var viewer = new Cesium.Viewer('cesiumContainer', {
+                     contextOptions: {
+                     webgl: {
+                            preserveDrawingBuffer: true
+                            }
+    }
+});
     </script>
 
 </body>
